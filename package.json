@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/JonasHa/JonasHa.github.io/issues"
   },
-  "homepage": "https://github.com/JonasHa/JonasHa.github.io"
+  "homepage": "https://github.com/JonasHa/JonasHa.github.io",
+  "dependencies": {
+    "angular": "^1.4.8"
+  }
 }
