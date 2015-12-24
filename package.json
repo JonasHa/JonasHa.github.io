@@ -1,0 +1,15 @@
+{
+  "name": "jonasha",
+  "version": "1.0.0",
+  "description": "jonasha rebound",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonasHa/JonasHa.github.io.git"
+  },
+  "author": "jonasha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasHa/JonasHa.github.io/issues"
+  },
+  "homepage": "https://github.com/JonasHa/JonasHa.github.io"
+}
