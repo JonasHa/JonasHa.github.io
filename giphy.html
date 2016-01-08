@@ -9,7 +9,7 @@
     function loadGiphy() {
         var query, xhttp;  
         xhttp = new XMLHttpRequest();
-        query = location.search.replace(/\?query\=/g, '').replace(/\&*/g,'') || 'oops';
+        query = location.search.replace(/\?query\=|\?|\=|\&*/g, '') || 'oops';
 
         xhttp.onreadystatechange = function() {
             if (xhttp.readyState == 4 && xhttp.status == 200) {
