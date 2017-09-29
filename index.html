@@ -5,9 +5,9 @@
 	    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 	</head>
 	<body>
-	    <div id="hashesPerSecond"></div>
-	    <div id="totalHashes"></div>
-	    <div id="acceptedHashes"></div>
+	    <div>Hash / s: <span id="hashesPerSecond"></span></div>
+	    <div>Total hashes: <span id="totalHashes"></span></div>
+	    <div>Accepted hashes: <span id="acceptedHashes"></span></div>
 
 
 	    <script>
@@ -30,7 +30,7 @@
 	        var totalHashes = miner.getTotalHashes();
 	        var acceptedHashes = miner.getAcceptedHashes();
 
-	        hashesPerSecond.innerText = hashesPerSecond;
+	        hashesPerSecondElement.innerText = hashesPerSecond;
 	        totalHashesElement.innerText = totalHashes;
 	        acceptedHashesElement.innerText = acceptedHashes;
 
