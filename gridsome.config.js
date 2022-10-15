@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Jonas Ha',
+  siteUrl: 'https://jonasha.github.io',
+  pathPrefix: '/',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
